@@ -10,6 +10,7 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -27,7 +28,18 @@ body {
 }
 
 
+.grid-container-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    width: 100%;
+    max-width: 1200px; 
+}
 
+.grid-item-top {
+    height: 100%;
+    border: 2px solid black; 
+}
 
 .grid-container {
     display: grid;
@@ -45,10 +57,18 @@ body {
     
 }
 
-/* .grid-item {
+.grid-container-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px; 
+    width: 100%;
+    max-width: 1200px; /* Adjust this value to your needs */
+}
+
+.grid-item-bottom {
     height: 100%;
-    border-top: 5px solid black;
-} */
+    border: 2px solid black;
+}
 
 #col1 {
     grid-area: col1;
