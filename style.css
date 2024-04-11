@@ -1,9 +1,61 @@
 html {
     background-color: rgb(161, 143, 111);
+
     font-family: Arial, sans-serif;
     margin: 23px;
     padding: 20px;
     border: 1.5px solid rgb(203, 198, 189); 
     box-sizing: border-box;
     height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50vh;
+    grid-template-areas: 
+        "col1 col2 col3 col4 col5";
+    width: 100%;
+    height: 50vh;
+    padding-left: 160px;
+    padding-right: 160px;
+    
+}
+
+.grid-item {
+    height: 100%;
+}
+
+#col1 {
+    grid-area: col1;
+    background-color: red;
+}
+
+#col2 {
+    grid-area: col2;
+    background-color: orange;
+}
+
+#col3 {
+    grid-area: col3;
+    background-color: yellow;
+}
+
+#col4 {
+    grid-area: col4;
+    background-color: green;
+}
+
+#col5 {
+    grid-area: col5;
+    background-color: blue;
 }
