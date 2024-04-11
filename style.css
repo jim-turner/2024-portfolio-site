@@ -3,9 +3,8 @@ html {
 
     font-family: Arial, sans-serif;
     margin: 23px;
-    padding: 20px;
-    border: 1.5px solid rgb(203, 198, 189); 
-    box-sizing: border-box;
+    padding: 0px;
+    
     height: 100%;
 }
 
@@ -15,7 +14,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 
 .midpage {
@@ -29,45 +28,136 @@ body {
 
 
 
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 50vh;
+    grid-template-rows: 75vh;
     grid-template-areas: 
         "col1 col2 col3 col4 col5";
     width: 100%;
-    height: 50vh;
-    padding-left: 160px;
-    padding-right: 160px;
+    height: 80vh;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+    background-color: white;
     
 }
 
-.grid-item {
+/* .grid-item {
     height: 100%;
     border-top: 5px solid black;
-}
+} */
 
 #col1 {
     grid-area: col1;
-    background-color: red;
+    background-color: rgb(230, 224, 220);
 }
 
 #col2 {
     grid-area: col2;
-    background-color: orange;
+    background-color: rgb(201, 193, 186);
 }
 
 #col3 {
     grid-area: col3;
-    background-color: yellow;
+    background-color: rgb(230, 224, 220);
 }
 
 #col4 {
     grid-area: col4;
-    background-color: green;
+    background-color: rgb(201, 193, 186);
 }
 
 #col5 {
     grid-area: col5;
-    background-color: blue;
+    background-color: rgb(230, 224, 220);
+}
+
+.title1 {
+    background-color: rgb(109, 144, 156);
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.title2 {
+    background-color: rgb(98, 127, 133);
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.title3 {
+    background-color: rgb(109, 144, 156);
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.title4 {
+    background-color: rgb(98, 127, 133);
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.title5 {
+    background-color: rgb(109, 144, 156);
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.title1-lower {
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+.title2-lower {
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.title3-lower {
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.title4-lower {
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.title5-lower {
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
 }
